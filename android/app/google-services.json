@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1047108288389",
+    "project_id": "eventza-f35b3",
+    "storage_bucket": "eventza-f35b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047108288389:android:cd323de219a252e3188eec",
+        "android_client_info": {
+          "package_name": "com.eventza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047108288389-rplr0rsrmd3ggidc7pneahltrca6rkat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOie44MhD2n_TofCkOJiLC9piTjYNe3no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047108288389-rplr0rsrmd3ggidc7pneahltrca6rkat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047108288389-9ulto6fagas9cai12gvcofrs0sfnptno.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Eventza"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

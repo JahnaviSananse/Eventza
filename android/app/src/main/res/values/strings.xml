@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Eventza</string>
+    <string name="facebook_app_id">1403923716611103</string>
+    <string name="fb_login_protocol_scheme">fb1403923716611103</string>
+
+</resources>

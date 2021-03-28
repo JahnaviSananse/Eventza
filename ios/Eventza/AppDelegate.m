@@ -51,9 +51,9 @@ static void InitializeFlipper(UIApplication *application) {
   // [FIRApp configure];
   return YES;
 }
-- (BOOL)application:(UIApplication )application openURL:(nonnull NSURL )url options:(nonnull NSDictionary<NSString ,id> )options {
-  return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options] || [RNGoogleSignin application:application openURL:url options:options];
-}
+// - (BOOL)application:(UIApplication )application openURL:(nonnull NSURL )url options:(nonnull NSDictionary<NSString ,id> )options {
+//   return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options] || [RNGoogleSignin application:application openURL:url options:options];
+// }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {

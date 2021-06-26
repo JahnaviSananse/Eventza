@@ -96,17 +96,16 @@ const SignUp = (props) => {
 
   useEffect(() => {
     GoogleSignin.configure({
-      scopes: ['email'], // what API you want to access on behalf of the user, default is email and profile
+      scopes: ['email'],
       webClientId:
-        '1047108288389-rplr0rsrmd3ggidc7pneahltrca6rkat.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
-      offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
+        '1047108288389-rplr0rsrmd3ggidc7pneahltrca6rkat.apps.googleusercontent.com',
+      offlineAccess: true,
       iosClientId:
         '1047108288389-9ulto6fagas9cai12gvcofrs0sfnptno.apps.googleusercontent.com',
     });
   }, []);
 
   async function onFacebookButtonPress() {
-    // Attempt login with permissions
     console.log('LoginManager', LoginManager);
     const result = await LoginManager.logInWithPermissions([
       'public_profile',
@@ -116,20 +115,13 @@ const SignUp = (props) => {
     if (result.isCancelled) {
       throw 'User cancelled the login process';
     }
-
-    // Once signed in, get the users AccesToken
     const data = await AccessToken.getCurrentAccessToken();
-
     if (!data) {
       throw 'Something went wrong obtaining access token';
     }
-
-    // Create a Firebase credential with the AccessToken
     const facebookCredential = auth.FacebookAuthProvider.credential(
       data.accessToken,
     );
-
-    // Sign-in the user with the credential
     return auth().signInWithCredential(facebookCredential);
   }
 
